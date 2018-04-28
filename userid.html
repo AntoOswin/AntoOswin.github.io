@@ -575,7 +575,7 @@ var line = d3.line()
 
  
 
-d3.csv("data/post_uid_vote_time.csv", type, function(error,data) {
+d3.csv("Data/post_uid_vote_time.csv", type, function(error,data) {
   if (error) throw error;
   data.forEach(function(d){
             d.user_id = +d.user_id;
