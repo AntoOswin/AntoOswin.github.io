@@ -688,7 +688,7 @@ d3.csv("data/post_uid_vote_time.csv", type, function(error,data) {
 
  var g2 = d3.select("svg").append("g").attr("class","profile").attr("transform", "translate(" + 700 + "," + 50 + ")");
 var topuserrep=1021403;
-var userurl = "http://api.stackexchange.com/2.2/users/" + userid + "?order=desc&sort=reputation&site=stackoverflow";
+var userurl = "https://api.stackexchange.com/2.2/users/" + userid + "?order=desc&sort=reputation&site=stackoverflow";
 fetch(userurl) 
 .then((resp) => resp.json()) 
 .then(function(data) {
