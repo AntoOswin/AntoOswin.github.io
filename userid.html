@@ -634,7 +634,7 @@ d3.csv("Data/post_uid_vote_time.csv", type, function(error,data) {
       .attr("class", "line")
       .attr("d", function(d) { postscount[d.id] = d.values.length; return line(d.values); })
 	  .style("stroke", function(d) { return color[d.id]; })
-	  .style("stroke-width","4px");
+	  .style("stroke-width","1.5px");
 	  var totpost = postscount['question']+postscount['answer']+postscount['accepted-answer'];
 	  document.getElementById("totposts").innerHTML = '<b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Posts: ' + totpost+'</b>';
 	  document.getElementById("ques").style = "width:"+ Math.round(postscount['question']*100/totpost) +"%";
