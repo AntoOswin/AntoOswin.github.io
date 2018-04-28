@@ -1,3 +1,4 @@
+#by Anto Oswin
 cd1 <- read.csv("E:\\Studies\\MCS ASU\\Spring 18\\CSE 578 DV\\Final Project\\Stack_data_formed2014\\Combined_Data_1.csv")
 temp = as.data.frame(table(cd1[2]))
 temp1 = head(temp[order(-temp[,2]),],40)
